@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "709053087055",
+    "project_id": "dbookcave",
+    "storage_bucket": "dbookcave.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709053087055:android:8e7e89095e6eb1696c193a",
+        "android_client_info": {
+          "package_name": "com.example.bookcave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709053087055-179vf0g8h4a942iul9v52g5i524rl22m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu0VQVxcQv0Be7EDJ9zP2zDylh2v5A1N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709053087055-179vf0g8h4a942iul9v52g5i524rl22m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

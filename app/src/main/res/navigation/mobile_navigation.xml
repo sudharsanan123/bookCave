@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bookez.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.bookez.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.bookez.ui.gallery.GalleryFragment"
+        android:label="@string/menu_addbook"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.bookez.ui.seller_currentorders.SellerCurrentOrdersFragment"
+        android:label="@string/menu_update_order"
+        tools:layout="@layout/fragment_seller_current_orders" />
+
+    <fragment
+        android:id="@+id/nav_booklist"
+        android:name="com.example.bookez.ui.seller_booklist.BooklistFragment"
+        android:label="@string/menu_booklist"
+        tools:layout="@layout/fragment_booklist" />
+
+
+    <fragment
+        android:id="@+id/nav_myprofile"
+        android:name="com.example.bookez.ui.seller_profile.SellerProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_seller_profile" />
+    <fragment
+        android:id="@+id/nav_current_order"
+        android:name="com.example.bookez.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_current_order"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_order_history"
+        android:name="com.example.bookez.ui.seller_history.SellerPayHistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_seller_pay_history" />
+    <fragment
+        android:id="@+id/nav_givefeedback"
+        android:name="com.example.bookez.ui.contactdev.ContactDeveloperFragment"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/activity_contact_developer" />
+    <fragment
+        android:id="@+id/nav_aboutapp"
+        android:name="com.example.bookez.ui.seller_about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

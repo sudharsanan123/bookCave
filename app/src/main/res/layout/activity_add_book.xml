@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".AddBook">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/register_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/user_registration_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/thumbnail"
+                        android:layout_width="150dp"
+                        android:layout_height="250sp"
+                        android:background="@drawable/loading_shape"
+                        />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginTop="25sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:maxLines="3"
+                        android:text="title"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:id="@+id/subtitle0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="6dp"
+                    android:text="@string/quan_ava"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="17sp"/>
+
+                <EditText
+                    android:id="@+id/uquantity"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_corner_hollow"
+                    android:textColorLink="@color/black"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/subtitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="6dp"
+                    android:text="@string/urprice"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="17sp"/>
+
+                <EditText
+                    android:id="@+id/uprice"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_corner_hollow"
+                    android:textColorLink="@color/black"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="19sp" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/subtitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rentprice"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="17sp"/>
+
+                    <Space
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/subtitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delicharges"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center">
+
+                    <EditText
+                        android:id="@+id/urprice"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_corner_hollow"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nunito"
+                        android:inputType="number"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="19sp" />
+
+                    <EditText
+                        android:id="@+id/udprice"
+                        android:layout_width="160dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_corner_hollow"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/nunito"
+                        android:inputType="number"
+                        android:paddingStart="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="19sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter 0 for no delivery charges"
+                    android:layout_marginStart="-10dp"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/previewBtn"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="Read Sample"
+                    android:background="@drawable/round_corner"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/nunito"
+                    android:paddingTop="5dp"
+                    android:textSize="19sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="@string/addbook"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

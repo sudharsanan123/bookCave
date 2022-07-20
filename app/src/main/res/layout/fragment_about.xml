@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.seller_about.AboutFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bookcavelogo"/>
+
+            <TextView
+                android:layout_marginStart="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/about"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="Why?"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="@string/about_para"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="Atharva Ikhar 2011056"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="Harshada Mali 2012090"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="Harihar Apamarjane 2011004"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="Unmesh Mirajkar 2012092"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/nunito"
+            android:text="App icon credits to Vishwananth Taware"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="What does this app do?"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="@string/about_para1"
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:text="@string/about_para10"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:text="@string/about_para11"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:text="Have any suggestions?"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:autoLink="email"
+            android:fontFamily="@font/nunito"
+            android:text="Drop it on this mail"
+            />
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:autoLink="email"
+            android:fontFamily="@font/nunito"
+            android:text="abc@gmail.com"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

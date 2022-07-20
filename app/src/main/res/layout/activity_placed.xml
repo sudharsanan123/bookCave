@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".Placed">
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/orderplaced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="order-packed.json"
+        app:lottie_autoPlay="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/order_placed"
+        android:textColor="@color/grey"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/backtomenu"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_home"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/white"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        />
+</LinearLayout>

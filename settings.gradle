@@ -1,0 +1,2 @@
+rootProject.name='BooKEZ'
+include ':app'

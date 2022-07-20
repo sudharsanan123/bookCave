@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".profile.ContactDeveloper">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:lottie_fileName="coffee_meditation.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/tellproblem"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sendmail">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20sp"
+                    android:fontFamily="@font/nunito"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/round_corner_hollow"
+                    android:editable="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sevofproblem"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="18dp"/>
+
+                <Spinner
+                    android:id="@+id/severityspinner"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingStart="20dp"
+                    android:background="@drawable/round_corner_hollow"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detailaboutproblem"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="18dp"/>
+                <EditText
+                    android:id="@+id/problem_description"
+                    android:layout_width="350dp"
+                    android:layout_height="221dp"
+                    android:layout_marginTop="2dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="18dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:background="@drawable/round_corner_hollow"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/sendmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="@string/sendmail"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

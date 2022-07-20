@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">BookCave</string>
+    <string name="welcome">Welcome to BookCave</string>
+    <!--Log in-->
+    <string name="login">Log In</string>
+    <string name="log_out">Log Out</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_pass">Forget Password?</string>
+    <string name="create_seller_account">Join us for business as Seller</string>
+    <!--Reset pass -->
+    <string name="have_account">Already have account?Log in.</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="receive_link">Receive link in email</string>
+    <!--Create Account-->
+    <string name="create_n_account">Create New Account</string>
+    <string name="create_n_s_account">Create New Seller Account</string>
+    <string name="create_account">Create Account</string>
+    <string name="owner_f_name">Owner\'s First Name</string>
+    <string name="owner_l_name">Owner\'s Last Name</string>
+    <string name="f_name">First Name</string>
+    <string name="l_name">Last Name</string>
+    <string name="ph_no">Phone no</string>
+    <string name="owner_ph_no">Owner\'s phone no</string>
+    <string name="for_order">For order:</string>
+    <string name="for_owner">Owner info:</string>
+    <string name="shop_name">Shop name</string>
+    <string name="GST_no">GST number</string>
+    <string name="for_company">Company info:</string>
+    <string name="address">Address</string>
+    <string name="pincode">Pincode</string>
+    <!--Home page-->
+    <string name="title_activity_home_customer">HomeCustomer</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_profile">Profile</string>
+    <!--Profile-->
+    <string name="name">My name</string>
+    <string name="profile">My Profile</string>
+    <string name="favourites">Favourites</string>
+    <string name="my_cart">My Cart</string>
+    <string name="order_history">Order History</string>
+    <string name="payment_history">Payment History</string>
+    <string name="help">Help</string>
+    <string name="contact_dev">Contact Developer</string>
+    <string name="about">About our app</string>
+    <string name="design">design purpose</string>
+    <!--contact dev-->
+    <string name="tellproblem">Tell me your problem</string>
+    <string name="sevofproblem">Severity of problem</string>
+    <string name="detailaboutproblem">Details about problem you are facing:</string>
+    <string name="sendmail">Send mail</string>
+    <string name="title_activity_home_seller">HomeSeller</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Successfully signed in</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_addbook">Add Books</string>
+    <string name="menu_removebooks">Remove Books</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="menu_booklist">Books List</string>
+    <string name="menu_update_order">Update Order status</string>
+    <string name="menu_info">My information</string>
+    <string name="menu_profile">My profile</string>
+    <string name="menu_options">Others</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_feedback">Report problem/Contact us</string>
+    <string name="menu_about">About our app</string>
+    <string name="menu_history">Payment history</string>
+    <string name="menu_current_order">All orders</string>
+    <string name="user">User</string>
+    <string name="searchhere">Search Book to add</string>
+
+    <string name="Failed_to_Load_data">Please check your Internet Connection</string>
+    <string name="NO_RESULT">No matching results</string>
+    <!--ABOUT-->
+    <string name="about_para">book cave app</string>
+    <string name="about_para1">App serves the purpose to be a medium between small book shop in city of pune and customers.Due to covid, Shops are closed because of  which it is hard to make living for small shop owners and slo for customers to buy.</string>
+    <string name="about_para10">This app will give opportunity to them to make living for small shop owner.</string>
+    <string name="about_para11">Also will give booknerds the books they want at home.</string>
+
+    <!--UPDATE INFO-->
+    <string name="update_det">Update details</string>
+    <string name="verifyemail">Verify your email*</string>
+    <string name="updansave">Update and Save changes</string>
+    <string name="addbook">Add book to selling list</string>
+    <string name="quan_ava">Quantities available at your shop</string>
+    <string name="urprice">Your selling price</string>
+    <string name="rentprice">Renting price</string>
+    <string name="delicharges">Delivery charges</string>
+    <!--SEARCH BOOK-->
+    <string name="search_ph">Search Books by name,author</string>
+    <!--VIEW BOOK-->
+    <string name="buybook">Buy Book</string>
+    <string name="rentbook">Rent Book</string>
+    <string name="read_preview">Read Book preview</string>
+    <string name="conti">Continue</string>
+    <string name="placeorder">Place Order</string>
+    <string name="pinfo">You will have to pay the money and other document(if required) on delivery. You can pay in cash or UPI, card or any other online mode too.</string>
+    <string name="addadd">Enter new address</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="change_address_for_this_order">Change Address for this order</string>
+    <string name="book_image">Book Image</string>
+    <string name="authname">Author Name</string>
+    <string name="genre">Genre</string>
+    <string name="price_details">Price details</string>
+    <string name="price_1_item">Price(1 item)</string>
+    <string name="delivery_charges">Delivery charges</string>
+    <string name="total_amount">Total amount</string>
+    <string name="payment_details">Payment details</string>
+    <string name="cash_on_delivery">Cash on delivery</string>
+    <string name="final_amount_to_pay">Final amount to pay</string>
+    <string name="use_this_address_for_this_order">Use this Address for this order</string>
+    <string name="go_to_home">Go to Home</string>
+    <string name="order_placed">Order placed!</string>
+    <string name="click_on_address_to_change_address_for_this_order">(Click on address to change address and pincode for this order)</string>
+    <string name="orders_recevied">Orders recevied</string>
+    <string name="profit_earned">Profit earned*</string>
+    <string name="potential_profit">Potential profit</string>
+    <string name="descripforOTP">Give the below secret OTP to delivery boy to authenticate and securely deliver the order.</string>
+    <string name="select_the_number_of_days_for_renting">Select the number of days for renting: </string>
+    <string name="verification_documents_necessary">Verification documents necessary</string>
+    <string name="any_valid_identity_proof_like_aadhar_card_pan_card_license_card_voting_card_would_be_considered">Any valid identity proof like Aadhar card, PAN card, License card, voting card would be considered.</string>
+    <string name="any_valid_identity_proof_like_electricity_bill_rent_agreement_aadhar_card_would_be_considered">Any valid identity proof like Electricity bill, Rent agreement, Aadhar card would be considered.</string>
+    <string name="updatenview">Update/view details</string>
+    <string name="recevied">Received</string>
+    <string name="tobereceived">to be received</string>
+    <string name="rejectedorder">Order rejected</string>
+
+</resources>

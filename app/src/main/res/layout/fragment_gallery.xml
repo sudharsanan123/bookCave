@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/search_book"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/sea_round_corner"
+            android:fontFamily="@font/nunito"
+            android:paddingStart="20dp"
+            android:hint="@string/searchhere"
+            android:textColorHint="#999999"
+            android:maxLines="1"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/search_book_btn"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/search_book"
+            android:background="@color/white"
+            android:src="@drawable/search_button"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/message_display"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            tools:text="Failed to get Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/result_list"
+            android:layout_width="413dp"
+            android:layout_height="615dp"
+            android:layout_marginTop="40dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:visibility="invisible"
+            android:layout_width="50dp"
+            android:layout_centerInParent="true"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

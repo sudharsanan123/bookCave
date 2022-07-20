@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bookez">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/bookcavelogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/bookcavelogo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name="com.example.bookez.RentBook"></activity>
+        <activity android:name="com.example.bookez.ViewOrderCustomer" />
+        <activity android:name="com.example.bookez.UpdateOrder" />
+        <activity android:name="com.example.bookez.Placed" />
+        <activity android:name="com.example.bookez.ChangeAddress" />
+        <activity android:name="com.example.bookez.BuyBook" />
+        <activity android:name="com.example.bookez.BookInfoOrder" />
+        <activity android:name="com.example.bookez.BookInfo" />
+        <activity android:name="com.example.bookez.extras.PreviewBook" />
+        <activity android:name="com.example.bookez.AddBook" />
+        <activity android:name="com.example.bookez.profile.AboutApp" />
+        <activity
+            android:name="com.example.bookez.HomeSeller"
+            android:label="@string/title_activity_home_seller"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.bookez.profile.ContactDeveloper" />
+        <activity android:name="com.example.bookez.profile.PaymentHistoryC" />
+        <activity android:name="com.example.bookez.profile.OrderHistoryC" />
+        <activity android:name="com.example.bookez.profile.Favourites" />
+        <activity android:name="com.example.bookez.profile.ProfileCustomer" />
+        <activity
+            android:name="com.example.bookez.HomeCustomer"
+            android:label="@string/title_activity_home_customer" />
+        <activity android:name="com.example.bookez.CreateAccountCustomer" />
+        <activity android:name="com.example.bookez.CreatAccountSeller" />
+        <activity android:name="com.example.bookez.forgot_password" />
+        <activity android:name="com.example.bookez.CustomerLogin" />
+        <activity android:name="com.example.bookez.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

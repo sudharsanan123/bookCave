@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookInfoOrder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:background="#fff"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/bthumbnail"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/loading_shape"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/btitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:fontFamily="@font/nunito"
+                        android:text="Book title"
+                        android:textSize="23sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bcategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:text="non categorized" />
+
+                    <TextView
+                        android:id="@+id/bprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="not given INR (on web)"
+                        android:fontFamily="@font/nunito"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/bauthor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito"
+                        android:text="author"
+                        android:maxLines="2"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunito" />
+
+            <TextView
+                android:id="@+id/bdesc"
+                android:layout_marginTop="6dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text=" No Description available"
+                android:fontFamily="@font/nunito"
+                android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+                    android:text="Seller Details:"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nunito" />
+
+                <TextView
+                    android:id="@+id/sname"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/sadd"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/rp"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/dc"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/nunito"
+                    android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/bshow"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_corner"
+                android:text="@string/read_preview"
+                android:textColor="@color/white"
+                android:layout_marginBottom="60sp"/>
+
+        </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/f1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buybook"
+
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/nunito"
+                android:text="@string/buybook"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/rentbook"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/nunito"
+                android:text="@string/rentbook"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

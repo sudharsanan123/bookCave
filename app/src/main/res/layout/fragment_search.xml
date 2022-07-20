@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="top">
+
+        <EditText
+            android:id="@+id/search_main"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/sea_round_corner"
+            android:fontFamily="@font/nunito"
+            android:paddingLeft="20dp"
+            android:hint="@string/search_ph"
+            android:textColorHint="#999999"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/search_main_btn"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/search_button"
+            android:background="@color/white"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn="Search on Internet"
+            android:textOff="Search available books only" />
+
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/No_result"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                tools:text="No books present in the list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_main"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_filled_36"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/add_book_36"
+            android:title="@string/menu_addbook" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/book_list_36"
+            android:title="@string/menu_update_order" />
+        <item
+            android:id="@+id/nav_booklist"
+            android:icon="@drawable/book_list_36"
+            android:title="@string/menu_booklist" />
+    </group>
+
+    <item android:title="@string/menu_info">
+        <menu>
+            <item
+                android:id="@+id/nav_myprofile"
+                android:icon="@drawable/profile_info_36"
+                android:title="@string/menu_profile" />
+            <item
+                android:id="@+id/nav_current_order"
+                android:icon="@drawable/current_order_36"
+                android:title="@string/menu_current_order" />
+            <item
+                android:id="@+id/nav_order_history"
+                android:icon="@drawable/order_history_36"
+                android:title="@string/menu_history" />
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_options">
+        <menu>
+            <item
+                android:id="@+id/nav_givefeedback"
+                android:icon="@drawable/report_feedback_36"
+                android:title="@string/menu_feedback" />
+            <item
+                android:id="@+id/nav_aboutapp"
+                android:icon="@drawable/about_36"
+                android:title="@string/menu_about" />
+        </menu>
+    </item>
+</menu>

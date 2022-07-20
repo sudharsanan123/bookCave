@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CreatAccountSeller">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/ActivityHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/create_n_s_account"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="22sp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/email"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:paddingStart="10dp"
+            android:inputType="textEmailAddress"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/password"
+            android:paddingStart="10dp"
+            android:textColorLink="@color/black"
+            android:inputType="textPassword"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/subtitle0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="60dp"
+            android:paddingBottom="6dp"
+            android:text="@string/for_owner"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/owner_f_name"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/owner_l_name"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/phno_owner"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/owner_ph_no"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="60dp"
+            android:paddingBottom="6dp"
+            android:text="@string/for_company"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/shopname"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/shop_name"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/gstno"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/GST_no"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/address"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:inputType="textPostalAddress"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/pincode"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/phno_company"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner_hollow"
+            android:hint="@string/ph_no"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColorLink="@color/black"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito"
+            android:textSize="19sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <Button
+            android:id="@+id/createaccButton"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/create_account"
+            android:textColor="@color/white"
+            android:background="@drawable/round_corner"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.example.bookcave"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //Default start
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.4'
+    implementation 'androidx.navigation:navigation-ui:2.3.4'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //Default End
+
+    //Lottie animation lib
+    implementation 'com.airbnb.android:lottie:3.6.1'
+    //Material lib
+    implementation 'com.google.android.material:material:1.4.0-alpha01'
+    //Circular ImageView
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    //Navigation
+    implementation 'androidx.navigation:navigation-fragment:2.3.4'
+    implementation 'androidx.navigation:navigation-ui:2.3.4'
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:27.0.0')
+    //Dependency for the Firebase SDK for Google Analytics, when using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+    //For auth
+    implementation 'com.google.firebase:firebase-auth'
+    // Dependency for the Cloud Firestore library
+    implementation 'com.google.firebase:firebase-firestore'
+    // FirebaseUI for Cloud Firestore
+    implementation 'com.firebaseui:firebase-ui-firestore:7.1.1'
+    //Volley HTTP Library for Networking
+    implementation 'com.android.volley:volley:1.2.0'
+    //Google Books api
+    //implementation 'com.google.api-client:google-api-client:1.31.4'
+    //For images
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    //refresh full
+    implementation 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    //for slider banner
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.0.6'
+    //Angolia
+    //cancelled
+
+
+}
